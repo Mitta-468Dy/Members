@@ -17,7 +17,12 @@ public class Task11 {
 		int tmp = 0;
 		
 		for(int i = 0 ; i < 10 ; i++){
-			tmp = sc.nextInt();
+			try {
+				tmp = sc.nextInt();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			mx = mx < tmp ? tmp : mx;
 			mn = mn > tmp ? tmp : mn;
 		}

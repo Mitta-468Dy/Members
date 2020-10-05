@@ -9,7 +9,13 @@ public class Task2 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("奇数か偶数かを判定する、対象の数字を入力してください。");
 		
-		int num = Integer.valueOf(sc.nextLine());
+		int num = 0;
+		try {
+			num = Integer.valueOf(sc.nextLine());
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		if (num == 0){
 			System.out.println("数値は0です。");

@@ -18,7 +18,12 @@ public class Task8 {
 		
 		for(int i = 0 ; i < 3 ; i++){
 			for(int j = 0 ; j < 3 ; j++){
-				vals[i][j] = sc.nextInt();
+				try {
+					vals[i][j] = sc.nextInt();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 		

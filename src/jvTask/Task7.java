@@ -11,9 +11,19 @@ public class Task7 {
 		
 		System.out.println("入力された二つの数字 aとbの差を求めます。");
 		System.out.println("一つ目の数字 aを入力してください。");
-		a = sc.nextInt();
+		try {
+			a = sc.nextInt();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("二つ目の数字 bを入力してください。");
-		b = sc.nextInt();
+		try {
+			b = sc.nextInt();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		System.out.println("aとbの差は " + Math.abs(a-b) + " です。");
 		sc.close();

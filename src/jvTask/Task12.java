@@ -10,7 +10,12 @@ public class Task12 {
 		
 		System.out.println("得点を入力してください。");
 		int[] scrbd = {0,500,1000,5000,Integer.MAX_VALUE};
-		int inscr = sc.nextInt();				//初期スコア
+		int inscr = 0;
+		try {
+			inscr = sc.nextInt();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		if(inscr < 0){
 			System.out.println("点数が不適切です。");
 		}

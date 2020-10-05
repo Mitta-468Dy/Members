@@ -7,7 +7,12 @@ public class Task1 {
 	public static void main(String[] args){
 		
 		Scanner sc = new Scanner(System.in);
-		int num = Integer.valueOf(sc.nextLine());
+		int num = 0;
+		try {
+			num = Integer.valueOf(sc.nextLine());
+		} catch (NumberFormatException e) {
+			e.printStackTrace();
+		}
 		
 		if (num == 0){
 			System.out.println("êîílÇÕ0Ç≈Ç∑ÅB");

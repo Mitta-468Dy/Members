@@ -12,7 +12,12 @@ public class Task6 {
 		int[] vals = new int[10];
 		
 		for(int i = 0 ; i < 10 ; i++){
-			vals[i] = sc.nextInt();
+			try {
+				vals[i] = sc.nextInt();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		System.out.print("“ü—Í‡");
 		for(int i = 0 ; i < 10 ; i++){

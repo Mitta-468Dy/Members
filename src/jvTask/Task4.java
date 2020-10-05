@@ -14,7 +14,12 @@ public class Task4 {
 		System.out.println("I—¹‚·‚éê‡‚Í•‰‚Ì”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
 		
 		do{
-			tmp = Integer.valueOf(sc.nextLine());
+			try {
+				tmp = Integer.valueOf(sc.nextLine());
+			} catch (NumberFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			if(tmp >= 0){
 				//•‰”‚Å‚È‚¯‚ê‚Î‘«‚·
 				ans += tmp;
